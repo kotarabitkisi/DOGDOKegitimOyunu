@@ -44,7 +44,7 @@ public class Stats : MonoBehaviour
         allOfLightsAreGreen = true;
         for (int i = 0; i < Lights.Length; i++)
         {
-            if (Lights[i].isGreen) { allOfLightsAreGreen = false; break; }
+            if (!Lights[i].isGreen) { allOfLightsAreGreen = false; break; }
         }
         if (allOfLightsAreGreen)
         {
