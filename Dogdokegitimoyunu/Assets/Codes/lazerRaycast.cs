@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class lazerRaycast : MonoBehaviour
@@ -8,7 +6,7 @@ public class lazerRaycast : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-        if(Physics.Raycast(transform.position,Vector3.forward,out hit, Mathf.Infinity))
+        if (Physics.Raycast(transform.position, Vector3.forward, out hit, Mathf.Infinity))
         {
             if (hit.transform.gameObject.CompareTag("Player"))
             {

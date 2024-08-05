@@ -220,6 +220,69 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d29dab146aae18b449d476fd48fe74ff, type: 3}
+--- !u!1 &84106060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6356177447878708375, guid: d29dab146aae18b449d476fd48fe74ff, type: 3}
+  m_PrefabInstance: {fileID: 84106059}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &84106061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5764331835064571550, guid: d29dab146aae18b449d476fd48fe74ff, type: 3}
+  m_PrefabInstance: {fileID: 84106059}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &104931625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 104931627}
+  - component: {fileID: 104931626}
+  m_Layer: 0
+  m_Name: Enemy
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &104931626
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104931625}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &104931627
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104931625}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -90.44939, z: 0}
+  m_LocalScale: {x: 500, y: 1, z: 500}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &383094879
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,7 +439,7 @@ GameObject:
   - component: {fileID: 585933860}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1498,7 +1561,7 @@ GameObject:
   - component: {fileID: 2002003089}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1757,9 +1820,17 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8209445753654723963, guid: 4b5948c37e760b54b9f342dc9a50948f, type: 3}
+      propertyPath: WinPanel
+      value: 
+      objectReference: {fileID: 84106060}
+    - target: {fileID: 8209445753654723963, guid: 4b5948c37e760b54b9f342dc9a50948f, type: 3}
       propertyPath: scoreTxt
       value: 
       objectReference: {fileID: 1588753408}
+    - target: {fileID: 8209445753654723963, guid: 4b5948c37e760b54b9f342dc9a50948f, type: 3}
+      propertyPath: LosePanel
+      value: 
+      objectReference: {fileID: 84106061}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1837,3 +1908,4 @@ SceneRoots:
   - {fileID: 2963005204525204461}
   - {fileID: 551841624}
   - {fileID: 1639455263}
+  - {fileID: 104931627}
