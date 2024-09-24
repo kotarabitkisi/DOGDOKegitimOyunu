@@ -52,6 +52,14 @@ public class Stats : MonoBehaviour
             {
                 Lazers[i].SetActive(false);
             }
+
+        }
+        else
+        {
+            for (int i = 0; i < Lazers.Length; i++)
+            {
+                Lazers[i].SetActive(true);
+            }
         }
         #endregion
     }

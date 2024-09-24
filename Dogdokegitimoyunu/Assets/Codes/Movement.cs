@@ -13,7 +13,7 @@ public class Movement : MonoBehaviour
         //farenin gözükmemesi için
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        
+        Physics.gravity = new Vector3(0,-20,0);
     }
     void Update()
     {

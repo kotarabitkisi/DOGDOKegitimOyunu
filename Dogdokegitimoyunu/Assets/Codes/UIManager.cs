@@ -3,6 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+    private void Start()
+    {
+            Time.timeScale = 1.0f;
+    }
     public void NextLvl()
     {
         Time.timeScale = 1.0f;
